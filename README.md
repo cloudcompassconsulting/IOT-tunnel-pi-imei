@@ -25,7 +25,5 @@ Remember to replace placeholders in the scripts with your actual paths, domains,
 
 ## Security
 
-This server uses Flask's built-in server, which is not suitable for production. Use a production WSGI server for a real-world deployment.
-
 The server uses an ad-hoc SSL certificate for HTTPS. It's recommended to use a certificate from a trusted Certificate Authority for a real-world deployment.
 
