@@ -11,7 +11,7 @@ This repository contains scripts and code for setting up a server on a Raspberry
 
 ### Cloudflare Tunnel
 
-1. Run the script `setup_cloudflare_tunnel.sh` to install Cloudflare, create a new tunnel, generate the tunnel configuration, install the tunnel service, and start the tunnel.
+1. Run the script `setup_cloudflare_tunnel.sh` to install Cloudflare, create a new tunnel, generate the tunnel configuration, install the tunnel service, and start the tunnel. Change yourdomain to the domain needed.
 
 ## Usage
 

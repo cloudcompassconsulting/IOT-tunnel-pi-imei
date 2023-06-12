@@ -24,7 +24,7 @@ tunnel: $TUNNEL_ID
 credentials-file: /root/.cloudflared/$TUNNEL_ID.json
 
 ingress:
-  - hostname: $TUNNEL_NAME.provenphone.com # replace with your actual domain
+  - hostname: $TUNNEL_NAME.yourdomain.com # replace with your actual domain
     service: $LOCAL_URL
   - service: http_status:404
 EOF
@@ -34,7 +34,7 @@ cloudflared --config /root/.cloudflared/$TUNNEL_NAME.yml service install
 systemctl enable cloudflared
 
 # Route the DNS of the tunnel
-cloudflared tunnel route dns $TUNNEL_ID $TUNNEL_NAME.provenphone.com # replace with your actual domain
+cloudflared tunnel route dns $TUNNEL_ID $TUNNEL_NAME.yourdomain.com # replace with your actual domain
 
 # Run the tunnel
 cloudflared tunnel run $TUNNEL_NAME
